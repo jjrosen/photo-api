@@ -11,6 +11,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "/photos/:id" => "photo#show" 
-  get "/photos" => "photo#index"
+  get "/photos/:id" => "photos#show" 
+  get "/photos" => "photos#index"
+  post "/photos" => "photos#create"
+  patch "/photos/:id" => "photos#update"
+  delete "/photos/:id" => "photos#delete"
+
 end
